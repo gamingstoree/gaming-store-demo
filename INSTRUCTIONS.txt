@@ -1,0 +1,15 @@
+GAMING STORE — notification de simulation Telegram
+
+Le site reste une démonstration. Il ne recueille aucune information de carte bancaire.
+La notification ne contient que les articles fictifs et leur total fictif.
+
+Configurer dans le projet Netlify :
+TELEGRAM_BOT_TOKEN = token nouveau depuis BotFather (Secret)
+TELEGRAM_CHAT_ID = identifiant numérique du chat privé où le bot doit écrire
+La conversation avec le bot doit être démarrée avec /start.
+
+Déployer le PROJET complet, comprenant index.html, assets/, netlify.toml et netlify/functions/demo-notify.js.
+ATTENTION : un téléversement statique de fichiers peut ne PAS installer les fonctions. Préférer la connexion Git et le build Netlify, ou une publication via Netlify CLI avec functions.
+
+Test : ouvrir le site, ajouter un produit, Panier démo, Confirmer la simulation. Si "Notification non confirmée", vérifier le déploiement Functions et les variables.
+Ne pas publier le token dans le HTML / JavaScript front-end.
